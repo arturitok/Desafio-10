@@ -1,0 +1,29 @@
+{
+  "name": "desafio-08",
+  "version": "1.0.0",
+  "description": "Desafio 08 - Mocks y Normalización",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "dev": "nodemon .",
+    "products:up": "npx knex --knexfile ./knexfile_mysql.js migrate:up 20211104151057_mysql.js",
+    "products:down": "npx knex --knexfile ./knexfile_mysql.js migrate:down 20211104151057_mysql.js",
+    "messages:up": "npx knex --knexfile ./knexfile_sqlite3.js migrate:up 20211104151146_sqlite3.js",
+    "messages:down": "npx knex --knexfile ./knexfile_sqlite3.js migrate:down 20211104151146_sqlite3.js"
+  },
+  "author": "AK",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "faker": "^6.6.6",
+    "knex": "^2.0.0",
+    "mongoose": "^6.3.4",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.16",
+    "normalizr": "^3.6.2",
+    "socket.io": "^4.5.1",
+    "sqlite3": "^5.0.8"
+  }
+}
