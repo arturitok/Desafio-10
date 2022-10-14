@@ -34,4 +34,5 @@ productosWebServerRouter.get('/vista', async (req, res) => {
     res.render( 'pages/vista', { productos } );
 });
 
+
 module.exports = productosWebServerRouter;
